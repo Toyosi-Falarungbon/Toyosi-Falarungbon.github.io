@@ -3,79 +3,217 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Toyosi Falarungbon — Business Operations, Project Execution and Fintech."
-  >
+  <meta name="description" content="Toyosi Falarungbon — Business Operations, Project Execution, Business Analysis and Fintech Implementation.">
+  <meta name="theme-color" content="#f5f3ee">
   <title>Toyosi Falarungbon — Business Operations & Project Execution</title>
   <style>
-    :root{--bg:#f7f7f4;--text:#171717;--muted:#70706a;--line:#deded8;--card:#fff;--max:1080px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}a{color:inherit}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
-    nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);font-size:13px}nav .name{font-weight:700;letter-spacing:.08em;font-size:12px}nav .links{display:flex;gap:24px;color:var(--muted)}nav a{text-decoration:none}nav a:hover{color:var(--text)}
-    .hero{padding:105px 0 115px}.label{font-size:11px;text-transform:uppercase;letter-spacing:.15em;color:var(--muted);font-weight:700}.hero h1{font-size:clamp(54px,9vw,104px);line-height:.92;letter-spacing:-.07em;font-weight:600;max-width:900px;margin:22px 0 28px}.hero .intro{font-size:clamp(19px,2.5vw,27px);line-height:1.3;letter-spacing:-.025em;max-width:720px;margin:0}.hero .small{color:var(--muted);max-width:620px;font-size:15px;margin-top:22px}.hero-actions{display:flex;gap:10px;margin-top:30px}.btn{display:inline-flex;padding:11px 16px;border:1px solid var(--text);font-size:12px;font-weight:700;text-decoration:none}.btn.dark{background:var(--text);color:var(--bg)}
-    section{border-top:1px solid var(--line);padding:78px 0}.section-top{display:flex;justify-content:space-between;gap:40px;margin-bottom:38px}.section-top h2{font-size:clamp(32px,5vw,55px);line-height:1;letter-spacing:-.055em;font-weight:600;margin:0;max-width:650px}.section-top p{color:var(--muted);max-width:360px;font-size:14px;margin:2px 0 0}
-    .projects{display:grid;grid-template-columns:1fr 1fr;gap:12px}.project{background:var(--card);border:1px solid var(--line);padding:28px;min-height:285px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .18s ease,border-color .18s ease}.project:hover{transform:translateY(-3px);border-color:#aaa}.project .meta{display:flex;justify-content:space-between;gap:15px;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.11em;font-weight:700}.project h3{font-size:clamp(25px,3vw,37px);line-height:1.02;letter-spacing:-.045em;margin:28px 0 12px;font-weight:600}.project p{color:var(--muted);font-size:14px;max-width:520px;margin:0}.project .bottom{border-top:1px solid var(--line);padding-top:13px;margin-top:24px;color:var(--muted);font-size:11px}
-    .featured{background:var(--text);color:var(--bg);padding:38px}.featured .label{color:#aaa9a2}.featured-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;margin-top:22px}.featured h3{font-size:clamp(32px,4.5vw,55px);line-height:.98;letter-spacing:-.055em;margin:0;font-weight:550}.featured p{color:#aaa9a2;font-size:14px;margin:0 0 18px}.featured strong{color:var(--bg)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#393936;margin-top:38px}.stat{background:var(--text);padding:20px}.stat b{display:block;font-size:26px;letter-spacing:-.04em}.stat span{display:block;color:#88877f;font-size:10px;text-transform:uppercase;letter-spacing:.1em;margin-top:4px}
-    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px}.about-grid h3{font-size:31px;line-height:1.05;letter-spacing:-.04em;margin:0}.about-grid p{color:var(--muted);font-size:15px;margin:0 0 16px}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:25px}.tag{border:1px solid var(--line);padding:7px 10px;font-size:11px;color:var(--muted)}
-    .experience{border-top:1px solid var(--line)}.exp{display:grid;grid-template-columns:150px 1fr 1.1fr;gap:35px;padding:25px 0;border-bottom:1px solid var(--line)}.exp .date{font-size:12px;color:var(--muted)}.exp h3{font-size:17px;margin:0}.exp .company{font-size:13px;color:var(--muted);margin-top:3px}.exp p{font-size:13px;color:var(--muted);margin:0}
-    .contact{padding:105px 0 120px}.contact h2{font-size:clamp(45px,7vw,78px);line-height:.94;letter-spacing:-.065em;max-width:800px;margin:18px 0}.contact p{color:var(--muted);max-width:580px;font-size:15px}.contact .links{display:flex;gap:24px;margin-top:28px;font-size:13px;font-weight:700}.contact .links a{text-decoration:underline;text-underline-offset:4px}
-    footer{border-top:1px solid var(--line);padding:20px 0 30px;color:var(--muted);font-size:11px;display:flex;justify-content:space-between}
-    @media(max-width:760px){.wrap{width:min(var(--max),calc(100% - 32px))}nav{height:66px}nav .links{display:none}.hero{padding:70px 0 80px}.hero h1{font-size:clamp(48px,15vw,76px)}section{padding:60px 0}.section-top,.about-grid,.featured-grid{display:block}.section-top p{margin-top:18px}.projects{grid-template-columns:1fr}.project{min-height:260px}.featured{padding:27px 22px}.featured-grid{margin-top:20px}.featured-grid>div+div{margin-top:30px}.stats{grid-template-columns:1fr}.exp{grid-template-columns:1fr;gap:7px}.contact{padding:80px 0 95px}footer{display:block}footer span+span{display:block;margin-top:6px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+    :root{--paper:#f5f3ee;--ink:#181816;--muted:#706f69;--line:#d9d6ce;--soft:#ebe8e0;--accent:#315c52;--max:1160px}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+    a{color:inherit}
+    .wrap{width:min(var(--max),calc(100% - 64px));margin:auto}
+    .eyebrow{font-size:10px;line-height:1;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);font-weight:750}
+    nav{height:78px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}
+    nav .mark{font-size:11px;font-weight:800;letter-spacing:.13em}
+    nav .links{display:flex;gap:28px;font-size:12px;color:var(--muted)}
+    nav a{text-decoration:none}nav a:hover{color:var(--ink)}
+
+    .hero{padding:116px 0 128px;border-bottom:1px solid var(--line)}
+    .hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:80px;align-items:end}
+    h1{font-size:clamp(58px,8.5vw,116px);line-height:.88;letter-spacing:-.075em;font-weight:560;max-width:980px;margin:25px 0 0}
+    .hero-note{max-width:360px;margin:0 0 3px;color:var(--muted);font-size:15px;line-height:1.55}
+    .hero-note strong{color:var(--ink);font-weight:650}
+    .hero-links{display:flex;gap:18px;margin-top:25px;font-size:12px;font-weight:700}
+    .hero-links a{text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:4px}
+
+    section{padding:100px 0;border-bottom:1px solid var(--line)}
+    .section-head{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-bottom:48px}
+    .section-head h2{font-size:clamp(38px,5vw,68px);line-height:.96;letter-spacing:-.065em;font-weight:560;margin:17px 0 0;max-width:650px}
+    .section-head p{max-width:390px;margin:18px 0 0;color:var(--muted);font-size:14px;line-height:1.6}
+
+    .work-list{border-top:1px solid var(--ink)}
+    .work-item{display:grid;grid-template-columns:70px 1.05fr 1fr 120px;gap:30px;align-items:start;padding:30px 0;border-bottom:1px solid var(--line);transition:padding .2s ease}
+    .work-item:hover{padding-left:8px;padding-right:8px}
+    .work-no{font-size:11px;color:var(--muted);padding-top:5px}
+    .work-title{font-size:29px;line-height:1.02;letter-spacing:-.045em;font-weight:600;margin:0}
+    .work-type{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:750;margin-bottom:10px}
+    .work-desc{font-size:13px;color:var(--muted);max-width:430px;margin:0}
+    .work-result{font-size:11px;color:var(--ink);line-height:1.55;margin:0;padding-left:16px;border-left:1px solid var(--line)}
+    .work-result span{display:block;color:var(--muted);text-transform:uppercase;letter-spacing:.09em;font-size:9px;margin-bottom:5px;font-weight:750}
+
+    .proof{padding:34px 0;display:grid;grid-template-columns:1.4fr .6fr;gap:70px;align-items:end}
+    .proof blockquote{font-size:clamp(28px,4vw,49px);line-height:1.02;letter-spacing:-.05em;margin:0;max-width:780px}
+    .proof-aside{font-size:12px;color:var(--muted);line-height:1.6}
+    .proof-aside b{display:block;color:var(--ink);font-size:28px;letter-spacing:-.04em;margin-bottom:3px}
+
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:100px}
+    .about-lead{font-size:clamp(27px,3.5vw,44px);line-height:1.05;letter-spacing:-.05em;max-width:610px;margin:0}
+    .about-copy{color:var(--muted);font-size:14px;max-width:480px}
+    .about-copy p{margin:0 0 18px}
+    .capabilities{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:55px}
+    .cap{background:var(--paper);padding:23px}
+    .cap h3{font-size:13px;margin:0 0 12px;font-weight:700}
+    .cap p{font-size:11px;color:var(--muted);margin:0;line-height:1.65}
+
+    .timeline{border-top:1px solid var(--ink)}
+    .role{display:grid;grid-template-columns:150px 1fr 1fr;gap:35px;padding:28px 0;border-bottom:1px solid var(--line)}
+    .role-date{font-size:11px;color:var(--muted)}
+    .role h3{font-size:18px;line-height:1.1;margin:0;font-weight:650}
+    .role-org{font-size:12px;color:var(--muted);margin-top:5px}
+    .role p{font-size:13px;color:var(--muted);margin:0;max-width:450px}
+
+    .contact{padding:120px 0 135px}
+    .contact h2{font-size:clamp(55px,9vw,112px);line-height:.86;letter-spacing:-.08em;font-weight:560;max-width:900px;margin:20px 0 30px}
+    .contact p{color:var(--muted);font-size:14px;max-width:520px;margin:0}
+    .contact-links{display:flex;gap:26px;margin-top:30px;font-size:12px;font-weight:700}
+    .contact-links a{text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:4px}
+    footer{padding:20px 0 28px;display:flex;justify-content:space-between;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.09em}
+
+    @media(max-width:820px){
+      .wrap{width:min(var(--max),calc(100% - 34px))}
+      nav{height:68px}nav .links{display:none}
+      .hero{padding:78px 0 90px}.hero-grid,.section-head,.about-grid,.proof{grid-template-columns:1fr;gap:35px}
+      .hero-note{max-width:560px}
+      section{padding:72px 0}
+      .work-item{grid-template-columns:40px 1fr;gap:10px 18px;padding:25px 0}
+      .work-item .work-desc,.work-item .work-result{grid-column:2}
+      .work-result{padding-left:0;border-left:0;border-top:1px solid var(--line);padding-top:14px}
+      .capabilities{grid-template-columns:1fr}
+      .role{grid-template-columns:1fr;gap:7px}
+      .contact{padding:90px 0 100px}
+      footer{display:block}footer span{display:block;margin-top:7px}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.work-item{transition:none}}
   </style>
 </head>
 <body>
   <div class="wrap">
     <nav>
-      <div class="name">TOYOSI FALARUNGBON</div>
-      <div class="links"><a href="#work">Work</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div>
+      <div class="mark">TOYOSI FALARUNGBON</div>
+      <div class="links">
+        <a href="#work">Work</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+      </div>
     </nav>
 
     <header class="hero">
-      <div class="label">Business Operations · Fintech · Project Execution</div>
-      <h1>I make complex business work easier to execute.</h1>
-      <p class="intro">I work across business operations, business analysis and project execution — turning business needs into structured work, clear processes and delivered outcomes.</p>
-      <p class="small">My experience spans fintech, payments, lending, partnerships, financial-services operations and implementation.</p>
-      <div class="hero-actions"><a class="btn dark" href="#work">View my work</a><a class="btn" href="#contact">Get in touch</a></div>
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Business Operations · Project Execution · Fintech</div>
+          <h1>Turning business needs into work that gets done.</h1>
+        </div>
+        <div>
+          <p class="hero-note">I work across <strong>business operations, business analysis and project execution</strong> — bringing structure to complex initiatives, aligning stakeholders and moving implementation forward.</p>
+          <div class="hero-links"><a href="#work">Selected work ↓</a><a href="#contact">Contact ↗</a></div>
+        </div>
+      </div>
     </header>
 
-    <section id="work">
-      <div class="section-top"><div><div class="label">01 — Selected work</div><h2>Projects, not a long list of responsibilities.</h2></div><p>A selection of initiatives that show how I work across operations, implementation, partnerships and financial services.</p></div>
-      <div class="projects">
-        <article class="project"><div><div class="meta"><span>Financial Services</span><span>01</span></div><h3>MFB Operations</h3><p>Helped structure practical operating processes across account opening, lending, documentation, governance and supporting financial-services activities.</p></div><div class="bottom">Operations · SOPs · workflows · governance</div></article>
-        <article class="project"><div><div class="meta"><span>Lending</span><span>02</span></div><h3>Staff Payday Loan</h3><p>Worked across business and implementation teams to move a staff lending initiative through requirements, operational readiness and supporting systems.</p></div><div class="bottom">Lending · Indicina · implementation</div></article>
-        <article class="project"><div><div class="meta"><span>Fintech Infrastructure</span><span>03</span></div><h3>Credit & Verification</h3><p>Supported enablement of credit and verification services, connecting commercial, operational and implementation requirements across external providers.</p></div><div class="bottom">CRC · FirstCentral · MyBankStatement</div></article>
-        <article class="project"><div><div class="meta"><span>Payments & APIs</span><span>04</span></div><h3>Payments & Platform Partnerships</h3><p>Worked across API, payments and platform opportunities, translating partner needs into commercial, technical and operational next steps.</p></div><div class="bottom">PaaS · APIs · merchant onboarding · partnerships</div></article>
-        <article class="project"><div><div class="meta"><span>Operational Excellence</span><span>05</span></div><h3>Process & Workflow Design</h3><p>Structured operational documentation including account opening, loan appraisal, account statement requests and supporting controls.</p></div><div class="bottom">Process mapping · SOPs · controls</div></article>
-        <article class="project"><div><div class="meta"><span>Commercial Operations</span><span>06</span></div><h3>Partner Portfolio</h3><p>Managed partner and account relationships across fintech, telco, ISP, PayTV and payments businesses, connecting commercial opportunities with delivery.</p></div><div class="bottom">Account management · partnerships · commercial coordination</div></article>
-      </div>
+    <main>
+      <section id="work">
+        <div class="section-head">
+          <div><div class="eyebrow">01 — Selected work</div><h2>Evidence of how I operate.</h2></div>
+          <p>Projects across digital lending, fintech infrastructure, partnerships, financial-services operations and internal process improvement.</p>
+        </div>
 
-      <div class="featured" style="margin-top:12px">
-        <div class="label">Featured project</div>
-        <div class="featured-grid"><h3>Building a workable operating model for a financial-services business.</h3><div><p><strong>The challenge</strong><br>Multiple teams, systems, providers and processes needed to work together more clearly.</p><p><strong>My contribution</strong><br>Structured requirements, documented workflows, coordinated stakeholders, tracked dependencies and helped move operational initiatives toward implementation.</p><p><strong>The result</strong><br>Clearer processes, better-defined ownership and practical execution pathways for ongoing operations.</p></div></div>
-        <div class="stats"><div class="stat"><b>66</b><span>Staff customers onboarded in Q3</span></div><div class="stat"><b>5+</b><span>Financial-services platforms worked across</span></div><div class="stat"><b>Cross-functional</b><span>Product · Tech · Finance · Risk · Operations</span></div></div>
-      </div>
-    </section>
+        <div class="work-list">
+          <article class="work-item">
+            <div class="work-no">01</div>
+            <div><div class="work-type">Digital Lending</div><h3 class="work-title">Staff Payday Loan</h3></div>
+            <p class="work-desc">Supported an end-to-end lending initiative across requirements, implementation, operational readiness and cross-functional delivery.</p>
+            <p class="work-result"><span>Scope</span>Product · Credit · Operations · Technology · Implementation</p>
+          </article>
+          <article class="work-item">
+            <div class="work-no">02</div>
+            <div><div class="work-type">Fintech Implementation</div><h3 class="work-title">Digital Lending Ecosystem</h3></div>
+            <p class="work-desc">Coordinated the enablement of third-party services supporting lending, credit assessment, bank-statement verification and direct debit operations.</p>
+            <p class="work-result"><span>Platforms</span>Indicina · MyBankStatement · Credit Registry · CRC · FirstCentral · Paystack</p>
+          </article>
+          <article class="work-item">
+            <div class="work-no">03</div>
+            <div><div class="work-type">Payments & APIs</div><h3 class="work-title">Platform & Partner Integrations</h3></div>
+            <p class="work-desc">Worked across API, payment and platform initiatives, translating partner requirements into commercial, technical and operational next steps.</p>
+            <p class="work-result"><span>Examples</span>Spectranet · Coralpay · Remita · Merchant onboarding</p>
+          </article>
+          <article class="work-item">
+            <div class="work-no">04</div>
+            <div><div class="work-type">Regulatory Operations</div><h3 class="work-title">NERC Collection Agent Registration</h3></div>
+            <p class="work-desc">Coordinated a regulatory initiative involving documentation, stakeholders and external requirements to support continued utility-payment operations.</p>
+            <p class="work-result"><span>Focus</span>Regulatory coordination · Documentation · Stakeholder management</p>
+          </article>
+          <article class="work-item">
+            <div class="work-no">05</div>
+            <div><div class="work-type">Operational Excellence</div><h3 class="work-title">Process & Workflow Design</h3></div>
+            <p class="work-desc">Structured operational workflows and documentation for financial-services activities, turning informal processes into clearer steps, ownership and controls.</p>
+            <p class="work-result"><span>Outputs</span>Workflows · SOPs · Process documentation · Operational controls</p>
+          </article>
+          <article class="work-item">
+            <div class="work-no">06</div>
+            <div><div class="work-type">Commercial Operations</div><h3 class="work-title">Strategic Partner Operations</h3></div>
+            <p class="work-desc">Managed relationships and delivery across a portfolio of fintech, telco, ISP, PayTV, utility and payment partners.</p>
+            <p class="work-result"><span>Scale</span>15+ strategic partner accounts</p>
+          </article>
+        </div>
 
-    <section id="about">
-      <div class="section-top"><div><div class="label">02 — About</div><h2>Commercial thinking with an operator's mindset.</h2></div></div>
-      <div class="about-grid"><div><h3>I sit between the business problem and the people who have to make it work.</h3></div><div><p>My career started in business development and account management and has expanded into fintech implementation, business analysis, operations and cross-functional project execution.</p><p>I am strongest where the work is complex, ownership crosses teams and someone needs to bring structure to the problem — clarifying what needs to happen, who needs to do it, what is blocking it and what happens next.</p><div class="tags"><span class="tag">Business Operations</span><span class="tag">Business Analysis</span><span class="tag">Project Execution</span><span class="tag">Fintech</span><span class="tag">Partnerships</span><span class="tag">Process Improvement</span></div></div></div>
-    </section>
+        <div class="proof">
+          <blockquote>“The work sits where business requirements, people, systems and execution meet.”</blockquote>
+          <div class="proof-aside"><b>20+</b>implementation and third-party integration initiatives across fintech and financial services.</div>
+        </div>
+      </section>
 
-    <section id="experience">
-      <div class="section-top"><div><div class="label">03 — Experience</div><h2>A progression toward broader ownership.</h2></div><p>My titles have evolved, but the thread has remained the same: understand the business need and move the work forward.</p></div>
-      <div class="experience">
-        <div class="exp"><div class="date">2023 — Present</div><div><h3>Director of Special Projects</h3><div class="company">Pagatech Limited (Paga)</div></div><p>Business and project execution across fintech and financial-services initiatives, including operational setup, implementation, process improvement, stakeholder management and governance.</p></div>
-        <div class="exp"><div class="date">Earlier scope</div><div><h3>Business Development Analyst</h3><div class="company">Pagatech Limited (Paga)</div></div><p>Commercial and partner-management experience across merchant onboarding, API sales, fintech partnerships, account development and strategic partner initiatives.</p></div>
-      </div>
-    </section>
+      <section id="about">
+        <div class="section-head">
+          <div><div class="eyebrow">02 — About</div><h2>An operator between the problem and the solution.</h2></div>
+          <p>I am most effective when work crosses teams and someone needs to create structure, maintain momentum and keep the business outcome in view.</p>
+        </div>
+        <div class="about-grid">
+          <p class="about-lead">I bring commercial context to project execution — and execution discipline to business operations.</p>
+          <div class="about-copy">
+            <p>My experience began in business development and account management and has expanded into fintech implementation, business analysis, lending operations, process improvement and cross-functional project delivery.</p>
+            <p>I work with Product, Engineering, Credit Risk, Compliance, Finance, Operations, People Operations and external partners to turn business requirements into actionable work.</p>
+          </div>
+        </div>
+        <div class="capabilities">
+          <div class="cap"><h3>Business Operations</h3><p>Operating processes · workflow design · governance · operational readiness</p></div>
+          <div class="cap"><h3>Project & Program Execution</h3><p>Implementation management · coordination · dependencies · delivery tracking</p></div>
+          <div class="cap"><h3>Business Analysis</h3><p>Requirements · process mapping · stakeholder discovery · UAT coordination</p></div>
+          <div class="cap"><h3>Fintech & Implementation</h3><p>Digital lending · payments · third-party platforms · integrations</p></div>
+          <div class="cap"><h3>Commercial & Partnerships</h3><p>Partner management · account development · commercials · onboarding</p></div>
+          <div class="cap"><h3>Data & Reporting</h3><p>Excel · Power BI · operational reporting · executive updates</p></div>
+        </div>
+      </section>
 
-    <section id="contact" class="contact">
-      <div class="label">04 — Contact</div>
-      <h2>Let's talk about the work.</h2>
-      <p>Open to conversations around Business Operations, Strategy & Operations, Product Operations, Program Management, fintech implementation and senior partner or account management opportunities.</p>
-      <div class="links"><a href="https://www.linkedin.com/in/toyosi-falarungbon/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://github.com/Toyosi-Falarungbon" target="_blank" rel="noopener">GitHub ↗</a></div>
-    </section>
+      <section id="experience">
+        <div class="section-head">
+          <div><div class="eyebrow">03 — Experience</div><h2>From commercial relationships to broader execution.</h2></div>
+          <p>A career built around understanding what the business needs and helping teams deliver it.</p>
+        </div>
+        <div class="timeline">
+          <div class="role">
+            <div class="role-date">2023 — PRESENT</div>
+            <div><h3>Business Development Analyst</h3><div class="role-org">Pagatech Limited (Paga)</div></div>
+            <p>Expanded scope across business operations, project execution, fintech implementations, digital lending, process improvement, partner management and cross-functional delivery.</p>
+          </div>
+          <div class="role">
+            <div class="role-date">CAREER SCOPE</div>
+            <div><h3>Business Development & Account Management</h3><div class="role-org">Fintech & Financial Services</div></div>
+            <p>Merchant onboarding, API sales support, strategic partnerships, account development and operational coordination across multiple partner categories.</p>
+          </div>
+        </div>
+      </section>
 
-    <footer><span>© 2026 Toyosi Falarungbon</span><span>Business Operations · Fintech · Project Execution</span></footer>
+      <section id="contact" class="contact">
+        <div class="eyebrow">04 — Contact</div>
+        <h2>Let's talk about the work.</h2>
+        <p>Open to conversations around Business Operations, Strategy & Operations, Product Operations, Program Management, Project Management, fintech implementation and business analysis.</p>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/toyosi-falarungbon/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="https://github.com/Toyosi-Falarungbon" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </div>
+      </section>
+    </main>
+
+    <footer><span>© 2026 Toyosi Falarungbon</span><span>Business Operations · Project Execution · Fintech</span></footer>
   </div>
 </body>
 </html>
